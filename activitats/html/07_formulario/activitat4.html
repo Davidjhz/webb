@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>  
+<body>
+    <h2>Búsqueda de Cámaras de Fotos</h2>
+
+<form action="#" method="get">
+
+    <label>Marca:</label><br>
+    <select name="marca">
+        <option value="">Cualquiera</option>
+        <option value="canon">Canon</option>
+        <option value="nikon">Nikon</option>
+        <option value="sony">Sony</option>
+        <option value="fujifilm">Fujifilm</option>
+    </select>
+
+    <br><br>
+
+    <label>Tipo de cámara:</label><br>
+    <input type="radio" name="tipo" value="reflex"> Réflex<br>
+    <input type="radio" name="tipo" value="mirrorless"> Mirrorless<br>
+    <input type="radio" name="tipo" value="compacta"> Compacta
+
+    <br><br>
+
+    <label>Resolución mínima (MP):</label><br>
+    <input type="number" name="megapixeles" min="5">
+
+    <br><br>
+
+    <label>Precio máximo:</label><br>
+    <input type="number" name="precio_max">
+
+    <br><br>
+
+    <label>¿Con grabación de vídeo?</label><br>
+    <input type="checkbox" name="video" value="si"> Sí
+
+    <br><br>
+
+    <input type="submit" value="Buscar">
+
+
+
+
+
 <table border="0">
   <tr>
     <td>
@@ -54,5 +97,13 @@
     </td>
   </tr>
 </table>
+
+
+
+
+
+
+
+
 </body>
 </html>
