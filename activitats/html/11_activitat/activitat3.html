@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Mi Sitio Web</h1>
+
+        <button id="menu-btn" popovertarget="menu-navegacion">
+            ☰ Menú
+        </button>
+    </header>
+
+    <hr>
+
+    <dialog id="menu-navegacion" popover>
+        <nav>
+            <h2>Navegación</h2>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#nosotros">Sobre nosotros</a></li>
+            </ul>
+            <button popovertarget="menu-navegacion" popovertargetaction="hide">
+                Cerrar
+            </button>
+        </nav>
+    </dialog>
+
+    <main>
+        <p>Contenido principal de la página...</p>
+    </main>    
+</body>
+</html>
