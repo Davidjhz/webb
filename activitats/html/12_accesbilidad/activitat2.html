@@ -9,9 +9,9 @@
 
 <a href="#main">Saltar al contenido</a>
 
-<header>
-    <h1>Registro de Usuario</h1>
-    <p>Crea tu cuenta rellenando el siguiente formulario.</p>
+<header>    
+    <h1 id="titulo-principal">Registro de Usuario</h1>
+    <p id="subtitulo">Crea tu cuenta rellenando el siguiente formulario.</p>
 </header>
 
 <main id="main">
@@ -19,7 +19,7 @@
     <form action="#" method="post">
 
         <fieldset>
-            <legend>Datos personales</legend>
+            <legend id="legend-datos">Datos personales</legend>
 
             <p>
                 <label for="nombre">Nombre completo</label><br>
@@ -43,38 +43,35 @@
                     required
                     autocomplete="email">
             </p>
-
             <p>
                 <label for="password">Contraseña</label><br>
                 <input 
-                    type="password" 
-                    id="password" 
-                    name="password"
-                    required
-                    minlength="6"
-                    aria-describedby="ayuda-password"
-                    autocomplete="new-password">
+                type="password" 
+                id="password" 
+                name="password"
+                required
+                minlength="6"
+                aria-describedby="ayuda-password"
+                autocomplete="new-password">
             </p>
 
             <p>
-                <label for="password">Confirmar contraseña</label><br>
-                <input 
-                    type="password" 
-                    id="password" 
-                    name="password"
-                    required
-                    minlength="6"
-                    aria-describedby="ayuda-password"
-                    autocomplete="new-password">
+            <label for="confirm-password">Confirmar contraseña</label><br>
+            <input 
+                type="password" 
+                id="confirm-password" 
+                name="confirm-password"
+                required
+                minlength="6"
+                autocomplete="new-password">
             </p>
-
             <p id="ayuda-password">
                 La contraseña debe tener al menos 6 caracteres.
             </p>
 
         </fieldset>
         <fieldset>
-            <legend>Preferencias</legend>
+        <legend id="legend-preferencias">Preferencias</legend>
 
             <p>
                 <input type="checkbox" id="newsletter" name="newsletter">
@@ -88,38 +85,20 @@
                 <label for="condiciones">
                     Acepto las condiciones de uso
                 </label>
-            </p>
-
-                <div class="form-group radio-group">
-                    <p id="idioma-preferido-label">Idioma preferido:</p>
-                    <div role="radiogroup" aria-labelledby="idioma-preferido-label">
-                        <input type="radio" id="espanol" name="idioma" value="es" checked>
-                        <label for="espanol">Español</label>
-
-                        <input type="radio" id="ingles" name="idioma" value="en">
-                        <label for="ingles">Inglés</label>
-
-                        <input type="radio" id="frances" name="idioma" value="fr">
-                        <label for="frances">Francés</label>
-                    </div>
-                </div>
-
+            </p>       
         </fieldset>
 
         <p>
-            <button type="submit">Registrarse</button>
+            <button type="submit" id="btn-registrar">Registrarse</button>
         </p>
-
-    </form>
-
-</main>
-
-<footer>
-    <p>&copy; 2026 Web accesible</p>
-     <nav aria-label="Enlaces de pie de página">
+        </form>
+        </main>
+        <footer>
+        <p>&copy; 2026 Web accesible</p>
+        <nav aria-label="Enlaces de pie de página">
             <ul>
-                <li><a href="#">Política de Privacidad</a></li>
-                <li><a href="#">Términos de Servicio</a></li>
+                 <li><a href="privacidad.html">Política de Privacidad</a></li>
+                 <li><a href="termino.html">Términos de Servicio</a></li>
             </ul>
         </nav>
 </footer>
