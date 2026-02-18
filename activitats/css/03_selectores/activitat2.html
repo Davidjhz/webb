@@ -6,6 +6,89 @@
     <title>Document</title>
 </head>
 <body>
-    
+</html>
+<style>
+    body{
+        margin:0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #ff9966, #ff5e62);
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+    }
+
+    .contenedor{
+        background:white;
+        width:80%;
+        max-width:900px;
+        padding:40px;
+        border-radius:20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        animation: aparecer 1s ease-in-out;
+    }
+
+    h1{
+        text-align:center;
+        font-size:3em;
+        margin-bottom:10px;
+        background: linear-gradient(to right, #ff512f, #dd2476);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    h2{
+        text-align:center;
+        font-weight:600;
+        color:#444;
+        margin-bottom:30px;
+    }
+
+    p{
+        line-height:1.8;
+        color:#555;
+        margin-bottom:20px;
+        transition: transform 0.3s ease, background 0.3s ease;
+        padding:10px;
+        border-radius:10px;
+    }
+
+    p:hover{
+        background:#ffe0d6;
+        transform: translateX(8px);
+    }
+
+    @keyframes aparecer{
+        from{
+            opacity:0;
+            transform: translateY(30px);
+        }
+        to{
+            opacity:1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+</head>
+  
+<body>
+
+    <div class="container">
+        <h1>Tenerife</h1>
+        <h2>Subiendo a un volcán</h2>
+        
+        <p>Mis amigos y yo nos propusimos subir andando hasta la cima del volcán más alto de España: <span class="highlight">el Teide</span>. El calor nos abrasó y a los pocos minutos vaciamos todas las cantimploras. A la hora siguiente notamos como las lagartijas nos perseguían con cierta distancia mientras se relamían los labios. Parecía que esa noche iban a cenar caliente.</p>
+        
+        <p>Otra hora más tarde uno de mis amigos se torció el tobillo y decidimos <span class="highlight">abandonarlo a su suerte</span>. Nunca más supimos de él, esperemos que esté en un sitio mejor.</p>
+        
+        <p>La siguiente hora notamos la ausencia del oxígeno. Respirábamos porque teníamos el hábito. Dos más cayeron en el olvido.</p>
+        
+        <p>La última hora notamos un poco de hambre de tanto andar. Optamos por el <span class="highlight">canibalismo</span>.</p>
+        
+        <p>Solo quedé yo. <strong>¡Qué vistas!</strong> Hasta podía ver la isla de Gran Canaria. Valió la pena cada zancada, camiseta escurrida, agujetas en las piernas y pérdidas humanas. Estaba a tanta altura que casi podía tocar las estrellas con la punta de mis dedos. Era la oportunidad de maravillarme del volcán y encontrar nuevos amigos.</p>
+    </div>
+
+
 </body>
 </html>
