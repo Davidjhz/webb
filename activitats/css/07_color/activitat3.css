@@ -1,0 +1,17 @@
+   .documento-secreto {
+           
+            --censura: #000000;
+            
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 1.8;
+            max-width: 800px;
+            padding: 20px;
+            color: #1a1a1a;
+        }
+
+       
+        .oculto {
+            background-color: var(--censura);
+            color: var(--censura);
+            padding: 0 4px;
+        }
