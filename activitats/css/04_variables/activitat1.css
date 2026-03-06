@@ -1,5 +1,5 @@
    :root {
-            --color-destacado: #2e7d32; /* Un verde elegante */
+            --color-destacado: #2e7d32; 
         }
 
         body {
@@ -9,14 +9,13 @@
             color: #333;
         }
 
-        /* Aplicamos la variable al título */
+
         h1 {
             color: var(--color-destacado);
             border-bottom: 2px solid var(--color-destacado);
             padding-bottom: 10px;
         }
 
-        /* Aplicamos la variable a los hipervínculos */
         p a {
             color: var(--color-destacado);
             text-decoration: none;
@@ -25,5 +24,5 @@
 
         p a:hover {
             text-decoration: underline;
-            filter: brightness(1.2); /* Aclara un poco el color al pasar el mouse */
+            filter: brightness(1.2); 
         }
