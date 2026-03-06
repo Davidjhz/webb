@@ -4,8 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+         <link rel="stylesheet" href="activitat2.css">
 </head>
 <body>
+    <section class="comments-section">
+    <h3>Deja un comentario</h3>
     
+    <form class="comment-form">
+        <div class="input-group">
+            <input type="text" placeholder="Tu nombre" required>
+            <input type="email" placeholder="Tu correo (no se publicará)" required>
+        </div>
+        <textarea placeholder="Escribe tu comentario aquí..." rows="4" required></textarea>
+        <button type="submit" class="btn-submit">Publicar comentario</button>
+    </form>
+
+    <hr>
+
+    <div class="comments-list">
+        <div class="comment-card">
+            <div class="comment-header">
+                <strong>Juan Peña</strong>
+                <span class="comment-date">Hace 2 horas</span>
+            </div>
+            <p class="comment-content">
+                ¡Excelente artículo! Me ha servido mucho para mi proyecto personal. Gracias por compartir.
+            </p>
+        </div>
+
+        <div class="comment-card">
+            <div class="comment-header">
+                <strong>Maria Pinillos</strong>
+                <span class="comment-date">Ayer</span>
+            </div>
+            <p class="comment-content">
+                ¿Podrías subir más ejemplos sobre la parte de CSS? Saludos.
+            </p>
+        </div>
+    </div>
+</section>
 </body>
 </html>
